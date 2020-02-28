@@ -27,6 +27,7 @@ class Owner
   end
   
   def cats 
+<<<<<<< HEAD
     Cat.all.select {|c| c.owner == self}
     #binding.pry
   end
@@ -69,5 +70,10 @@ class Owner
   
   def list_pets
     "I have #{self.dogs.count} dog(s), and #{self.cats.count} cat(s)."
+=======
+    #binding.pry
+    Cat.all.select {|c| c.owner == self}
+    binding.pry
+>>>>>>> f2dfe2fae9dd555f3fe0682a823ec06645f3548f
   end
 end
